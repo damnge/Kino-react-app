@@ -1,14 +1,14 @@
 .navbar {
   width: 100%;
   background-color: #2d2d2d;
-  padding: 35px 140px;
+  padding: 35px 0;
 }
 .navbar__container {
   max-width: 1160px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto 0;
+  margin: 0 auto;
 }
 .logo {
   width: 150px;

@@ -1,0 +1,10 @@
+.movie__card {
+  width: 267px;
+  height: 334px;
+}
+
+.poster {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

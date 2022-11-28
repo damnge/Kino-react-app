@@ -1,0 +1,16 @@
+.cinema {
+  margin: 130px auto;
+  max-width: 1160px;
+}
+
+.section__title {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.poster__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
