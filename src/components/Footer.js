@@ -9,21 +9,17 @@ import {
 } from "./FooterStyles";
 
 const Footer = () => {
-    return (
+  return (
   <Box>
-      <h1 style={{ color: "green", 
+      <h1 style={{ color: "white", 
                    textAlign: "center", 
-                   marginTop: "-50px" }}>
+                   marginTop: "-50px"}}>
       </h1>
+      
       <Container>
         <Row>
-        <Column>
-            <Heading>
-            <img src="img/logo.svg" alt="kino app logo" className="logo" />
-
-            </Heading>
-          </Column>
-          <Column>
+          <img src="img/logo.svg" alt="kino app logo" className="logo"></img> 
+       <Column>
             <Heading>MENU</Heading>
             <FooterLink href="#">Home</FooterLink>
             <FooterLink href="#">Cinema</FooterLink>

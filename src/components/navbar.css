@@ -40,4 +40,5 @@ li > a {
 
 a:hover {
   color: #ffc93f;
+  transition: 200ms ease-in;
 }

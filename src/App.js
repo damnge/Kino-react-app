@@ -1,14 +1,17 @@
+import React from "react";
 import "./App.css";
 import CinemaAndTrends from "./components/CinemaAndTrends";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div style={{position:"relative", height:"100%"}}>
       {" "}
       <Navbar />
       <CinemaAndTrends title="In Cinema Now" />
       <CinemaAndTrends title="Trending Now" />
+      <Footer />
     </div>
   );
 }

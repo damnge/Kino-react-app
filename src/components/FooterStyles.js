@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-  padding: 80px 60px;
+  padding: 80px 0px;
   background: #2d2d2d;
   position: absolute;
   bottom: 0;
   width: 100%;
+  margin-bottom: -130px;
   
    
   @media (max-width: 1000px) {
@@ -17,11 +18,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 1160px;
     margin: 0 auto;
-    /* background: red; */
+    
 `
-   
+   // MENU Column
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
@@ -52,10 +53,15 @@ export const FooterLink = styled.a`
       transition: 200ms ease-in;
   }
 `;
-   
+   // MENU-EVENTS-CONTACT US
 export const Heading = styled.p`
   font-size: 24px;
   color: #fff;
   margin-bottom: 40px;
   font-weight: bold;
+  margin-top: 0px;
 `;
+
+
+
+
