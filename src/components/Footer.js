@@ -8,6 +8,12 @@ import {
   Heading,
 } from "./FooterStyles";
 
+const Copyright = () => {
+  const year = new Date().getFullYear();
+
+  return <Copyright>{`Kino © We love our users ${year}`}</Copyright>;
+};
+
 const Footer = () => {
   return (
   <Box>
@@ -43,5 +49,7 @@ const Footer = () => {
     </Box>
   );
 };
+
+
 
 export default Footer;
