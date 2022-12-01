@@ -1,0 +1,40 @@
+.ranking__card {
+  max-width: 1160px;
+  max-height: 230px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: #666;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.ranking__card__id {
+  font-size: 64px;
+  padding: 25px;
+}
+.ranking__card__img {
+  width: 169px;
+  height: 230px;
+}
+
+.ranking__card__info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.ranking__card__info__type {
+  margin-bottom: 60px;
+}
+
+.ranking__card__score {
+  margin-left: auto;
+  padding: 30px;
+}
+
+.score {
+  font-size: 64px;
+  font-weight: bold;
+  margin-right: 10px;
+}
