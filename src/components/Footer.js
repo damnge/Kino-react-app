@@ -8,12 +8,6 @@ import {
   Heading,
 } from "./FooterStyles";
 
-const Copyright = () => {
-  const year = new Date().getFullYear();
-
-  return <Copyright>{`Kino © We love our users ${year}`}</Copyright>;
-};
-
 const Footer = () => {
   return (
   <Box>
@@ -24,7 +18,7 @@ const Footer = () => {
       
       <Container>
         <Row>
-          <img src="img/logo.svg" alt="kino app logo" className="logo"></img> 
+              <img src="img/logo.svg" alt="kino app logo" className="logo"></img> 
        <Column>
             <Heading>MENU</Heading>
             <FooterLink href="#">Home</FooterLink>
@@ -39,7 +33,7 @@ const Footer = () => {
             <FooterLink href="#">Training Videography</FooterLink>
           </Column>
           <Column>
-              <Heading>Contact US</Heading>
+              <Heading>CONTACT US</Heading>
               <FooterLink href="#">info@kino.com</FooterLink>
               <FooterLink href="#">+354 800-200-300</FooterLink>
               <FooterLink href="#">Laugavegur 8, 101 Reykjavík</FooterLink>
