@@ -36,14 +36,18 @@ const Footer = () => {
               <Heading>CONTACT US</Heading>
               <FooterLink href="#">info@kino.com</FooterLink>
               <FooterLink href="#">+354 800-200-300</FooterLink>
-              <FooterLink href="#">Laugavegur 8, 101 Reykjavík</FooterLink>
+              <FooterLink href="#">Laugavegur 8, 101 Reykjavik</FooterLink>
             </Column>
         </Row>
+        <p className="footer">© Kino 2022 We love our users!</p>
       </Container>
     </Box>
-  );
+    );
 };
-
-
-
 export default Footer;
+
+
+
+
+
+
