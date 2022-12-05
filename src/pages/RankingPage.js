@@ -2,14 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import RankingCard from "../components/RankingCard";
 
-// import Footer from "../src/components/Footer";
+import Footer from "../src/components/Footer";
 
 function RankingPage() {
   return (
     <div>
       <Navbar />
       <RankingCard />
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 }

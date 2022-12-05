@@ -5,6 +5,7 @@ import RankingCard from "../components/RankingCard";
 import SelctedMovie from "../components/SelectedMovie";
 import SearchResult from "../components/SearchResult";
 import FavouriteAndWatch from "../components/FavouriteAndWatch";
+import Footer from "../components/Footer";
 
 // Pages that need to be linked
 
@@ -29,6 +30,7 @@ function App() {
         img="./img/fullheart.svg"
       />
       <FavouriteAndWatch title="Movies I want to Watch" img="./img/eye.svg" />
+      <Footer />
     </div>
   );
 }

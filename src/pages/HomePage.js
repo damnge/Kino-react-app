@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import CinemaAndTrends from "../components/CinemaAndTrends";
 
-// import Footer from "../src/components/Footer";
+import Footer from "../src/components/Footer";
 
 function HomePage() {
   return (
@@ -10,7 +10,7 @@ function HomePage() {
       <Navbar />
       <CinemaAndTrends title="In Cinema Now" />
       <CinemaAndTrends title="Trending Now" />
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 }

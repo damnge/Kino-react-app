@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import FavouriteAndWatch from "../components/FavouriteAndWatch";
 
-// import Footer from "../src/components/Footer";
+import Footer from "../src/components/Footer";
 
 function FavouritePage() {
   return (
@@ -13,7 +13,7 @@ function FavouritePage() {
         img="./img/fullheart.svg"
       />
       <FavouriteAndWatch title="Movies I want to Watch" img="./img/eye.svg" />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
