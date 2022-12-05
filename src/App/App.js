@@ -6,12 +6,13 @@ import SelctedMovie from "../components/SelectedMovie";
 import SearchResult from "../components/SearchResult";
 import FavouriteAndWatch from "../components/FavouriteAndWatch";
 
-// Pages
-import HomePage from "../pages/HomePage";
-import SearchPage from "../pages/SearchPage";
-import RankingPage from "../pages/RankingPage";
-import FavouritePage from "../pages/FavouritePage";
-import SelectedMoviePage from "../pages/SelectedMoviePage";
+// Pages that need to be linked
+
+// import HomePage from "../pages/HomePage";
+// import SearchPage from "../pages/SearchPage";
+// import RankingPage from "../pages/RankingPage";
+// import FavouritePage from "../pages/FavouritePage";
+// import SelectedMoviePage from "../pages/SelectedMoviePage";
 
 function App() {
   return (
