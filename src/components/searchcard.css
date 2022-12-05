@@ -1,0 +1,16 @@
+.search__card {
+  display: flex;
+  color: white;
+  margin-bottom: 50px;
+}
+.search__poster {
+  width: 200px;
+  height: 300px;
+}
+.rating {
+  margin-left: 5px;
+}
+
+.movie__details {
+  margin-left: 75px;
+}

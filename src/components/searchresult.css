@@ -1,10 +1,11 @@
-.cinema {
-  margin: 130px auto;
+.search__results {
   max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 125px;
   color: white;
 }
 
-.section__title {
+.search__results__title {
   font-weight: 600;
   font-size: 48px;
   line-height: 58px;
@@ -12,11 +13,11 @@
 
   letter-spacing: 0.025em;
   text-transform: uppercase;
-  margin-bottom: 60px;
 }
 
-.poster__wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
+.search__results__for {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 75px;
 }
