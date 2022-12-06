@@ -1,16 +1,9 @@
 import "./App.css";
-import CinemaAndTrends from "../components/CinemaAndTrends";
-import Navbar from "../components/Navbar";
-import RankingCard from "../components/RankingCard";
-import SelctedMovie from "../components/SelectedMovie";
-import SearchResult from "../components/SearchResult";
-import FavouriteAndWatch from "../components/FavouriteAndWatch";
-import Footer from "../components/Footer";
 
+import SearchPage from "../pages/SearchPage";
 // Pages that need to be linked
 
 // import HomePage from "../pages/HomePage";
-import SearchPage from "../pages/SearchPage";
 // import RankingPage from "../pages/RankingPage";
 // import FavouritePage from "../pages/FavouritePage";
 // import SelectedMoviePage from "../pages/SelectedMoviePage";
