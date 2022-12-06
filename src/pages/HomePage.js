@@ -1,6 +1,5 @@
 import React from "react";
 import CinemaAndTrends from "../components/CinemaAndTrends";
-import Footer from "../components/Footer";
 
 function HomePage() {
   return (
