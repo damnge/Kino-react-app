@@ -1,13 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import FavouriteAndWatch from "../components/FavouriteAndWatch";
-
-import Footer from "../src/components/Footer";
+import Footer from "../components/Footer";
 
 function FavouritePage() {
   return (
     <div>
-      <Navbar />
       <FavouriteAndWatch
         title="My Favourite Movies"
         img="./img/fullheart.svg"

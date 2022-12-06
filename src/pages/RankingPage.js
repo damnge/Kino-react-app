@@ -1,17 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import RankingCard from "../components/RankingCard";
-
-import Footer from "../src/components/Footer";
+import Footer from "../components/Footer";
 
 function RankingPage() {
-  return (
-    <div>
-      <Navbar />
-      <RankingCard />
-      <Footer />
-    </div>
-  );
+  return <RankingCard />;
 }
 
 export default RankingPage;
