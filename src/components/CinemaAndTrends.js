@@ -1,6 +1,7 @@
 import React from "react";
 import MovieCard from "./MovieCard";
 import "./cinemacards.css";
+import "./responsive.css";
 
 function CinemaAndTrends(props) {
   return (

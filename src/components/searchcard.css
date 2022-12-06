@@ -13,4 +13,5 @@
 
 .movie__details {
   margin-left: 75px;
+  max-width: 630px;
 }

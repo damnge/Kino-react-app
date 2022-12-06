@@ -1,16 +1,13 @@
 .search__results {
   max-width: 1160px;
-  margin: 0 auto;
-  margin-top: 125px;
+  margin: 250px auto 350px auto;
   color: white;
 }
 
 .search__results__title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 58px;
-  /* identical to box height */
-
   letter-spacing: 0.025em;
   text-transform: uppercase;
 }
@@ -20,4 +17,70 @@
   font-size: 36px;
   line-height: 43px;
   margin-bottom: 75px;
+}
+
+.input__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.search__input {
+  height: 48px;
+  width: 960px;
+  border-radius: 5px;
+  border: none;
+}
+
+input::placeholder {
+  font-size: 20px;
+}
+input[type="text"] {
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.search__btn {
+  width: 167px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ffc93f;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search__btn:hover {
+  background-color: #fed46c;
+  transition: 0.3s all;
+}
+
+.search__card {
+  display: flex;
+  color: white;
+  margin-bottom: 75px;
+  justify-content: space-between;
+}
+.search__poster {
+  width: 200px;
+  height: 300px;
+}
+.rating {
+  margin-left: 5px;
+}
+
+.movie__details {
+  max-width: 850px;
+}
+
+.movie__headline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search__description {
+  font-size: 20px;
 }
