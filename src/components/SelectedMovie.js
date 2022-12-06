@@ -1,6 +1,6 @@
 import React from "react";
 import "./selectedmovie.css";
-function SelctedMovie() {
+function SelectedMovie() {
   return (
     <section className="selected__movie">
       <div className="selected__movie__leftbox">
@@ -53,4 +53,4 @@ function SelctedMovie() {
   );
 }
 
-export default SelctedMovie;
+export default SelectedMovie;

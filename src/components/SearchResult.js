@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./searchresult.css";
 import "./responsive.css";
 import "./selectedmovie.css";
+import { Link } from "react-router-dom";
 
 export default function SearchResult() {
   //states- input query, movies
@@ -60,31 +61,35 @@ export default function SearchResult() {
           {movies
             .filter((movie) => movie.poster_path)
             .map((movie) => (
-              <div className="search__card" key={movie.id}>
-                <img
-                  className="search__poster"
-                  src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
-                  alt={movie.title + " poster"}
-                />
-                <div className="movie__details">
-                  <div className="movie__headline">
-                    <h3 className="selected__movie__title">
-                      {movie.title} ({movie.release_date.slice(0, 4)})
-                    </h3>
-                    <div className="rating__imdb">
-                      <img
-                        src="./img/imdb.png"
-                        className="imdb"
-                        alt="imdb logo"
-                      />
+              <Link to={`/selectedmovie/`}>
+                <div className="search__card" key={movie.id}>
+                  <img
+                    className="search__poster"
+                    src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
+                    alt={movie.title + " poster"}
+                  />
+                  <div className="movie__details">
+                    <div className="movie__headline">
+                      <h3 className="selected__movie__title">
+                        {movie.title} ({movie.release_date.slice(0, 4)})
+                      </h3>
+                      <div className="rating__imdb">
+                        <img
+                          src="./img/imdb.png"
+                          className="imdb"
+                          alt="imdb logo"
+                        />
 
-                      <span className="score__imdb">{movie.vote_average}</span>
+                        <span className="score__imdb">
+                          {movie.vote_average}
+                        </span>
+                      </div>
                     </div>
-                  </div>
 
-                  <p className="search__description">{movie.overview}</p>
+                    <p className="search__description">{movie.overview}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
         </div>
       </section>

@@ -1,7 +1,6 @@
-
 .selected__movie {
   max-width: 1160px;
-  margin: 0 auto;
+  margin: 150px auto;
   display: flex;
   justify-content: space-between;
   color: white;

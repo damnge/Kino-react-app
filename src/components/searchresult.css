@@ -93,3 +93,7 @@ input[type="text"] {
 .search__description {
   font-size: 20px;
 }
+
+a {
+  text-decoration: none;
+}

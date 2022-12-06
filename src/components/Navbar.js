@@ -13,10 +13,6 @@ function Navbar() {
       <div className="navbar__container">
         <img src="img/logo.svg" alt="kino app logo" className="logo" />
         <div className="right__links">
-          {/* <input
-            className="search__bar"
-            placeholder="Search for a Movie"
-          ></input> */}
           <ul className="navbar__links">
             <li>
               <Link to="/">Home</Link>
