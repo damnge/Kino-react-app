@@ -1,3 +1,12 @@
+.section__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
 .search__results {
   max-width: 1160px;
   margin: 250px auto 350px auto;

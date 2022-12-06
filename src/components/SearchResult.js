@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import SearchCard from "./SearchCard";
 import "./searchresult.css";
 import "./responsive.css";
+import "./selectedmovie.css";
 
 export default function SearchResult() {
   //states- input query, movies
