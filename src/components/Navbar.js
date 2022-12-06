@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__container">
-        <img src="img/logo.svg" alt="kino app logo" className="logo" />
+        <img src="./img/logo.svg" alt="kino app logo" className="logo" />
         <div className="right__links">
           <ul className="navbar__links">
             <li>

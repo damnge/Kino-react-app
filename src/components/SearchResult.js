@@ -61,7 +61,7 @@ export default function SearchResult() {
           {movies
             .filter((movie) => movie.poster_path)
             .map((movie) => (
-              <Link to={`/selectedmovie/`}>
+              <Link to="/selectedmovie">
                 <div className="search__card" key={movie.id}>
                   <img
                     className="search__poster"
