@@ -8,7 +8,6 @@ import HomePage from "../pages/HomePage";
 import RankingPage from "../pages/RankingPage";
 import FavouritePage from "../pages/FavouritePage";
 import Footer from "../components/Footer";
-// import SelectedMoviePage from "../pages/SelectedMoviePage";
 import SelectedMovie from "../components/SelectedMovie";
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
         <Route path="/cinema" element={<HomePage />} />
         <Route path="/ranking" element={<RankingPage />} />
         <Route path="/favourite" element={<FavouritePage />} />
-        <Route path="/selectedmovie" element={<SelectedMovie />} />
+        <Route path="/selectedmovie/:id" element={<SelectedMovie />} />
       </Routes>
       <Footer />
     </Router>

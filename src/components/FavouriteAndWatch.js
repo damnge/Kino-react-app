@@ -14,12 +14,7 @@ function FavouriteAndWatch(props) {
           style={{ marginLeft: "15px", paddingBottom: "15px" }}
         />
       </div>
-      <div className="poster__wrapper">
-        <MovieCard />
-        <MovieCard />
-        <MovieCard />
-        <MovieCard />
-      </div>
+      <div className="poster__wrapper"></div>
     </section>
   );
 }
