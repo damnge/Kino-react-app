@@ -4,8 +4,8 @@ import CinemaAndTrends from "../components/CinemaAndTrends";
 function HomePage() {
   return (
     <div>
-      <CinemaAndTrends title="In Cinema Now" />
-      <CinemaAndTrends title="Trending Now" />
+      <CinemaAndTrends name="In Cinemas Now" type="upcoming" />
+      <CinemaAndTrends name="Popular Movies" type="popular" />
     </div>
   );
 }

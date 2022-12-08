@@ -1,11 +1,6 @@
 import React from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-// import SearchPage from "../pages/SearchPage";
-// import SearchResult from "./SearchResult";
-// import HomePage from "../pages/HomePage";
-// import RankingPage from "../pages/RankingPage";
-// import FavouritePage from "../pages/FavouritePage";
 
 function Navbar() {
   return (

@@ -1,55 +1,86 @@
 import React from "react";
 import "./selectedmovie.css";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 function SelectedMovie() {
+  const [film, setFilm] = useState([]);
+  const { id } = useParams();
+
+  const detailMovies = async () => {
+    const url = `https://api.themoviedb.org/3/movie/11?api_key=4d1dd7d940550563fbb5c0d4434d7ced&language=en-U`;
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      setFilm(data.results);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  // useEffect(() => {
+  //   detailMovies(11);
+  // }, []);
+
   return (
-    <section className="selected__movie">
-      <div className="selected__movie__leftbox">
-        <img
-          src="./img/blackpanter.png"
-          alt="poster"
-          className="selected__poster"
-        />
-        <div className="icons__box">
-          <div className="icons__box__heart">
-            <img src="./img/heart.svg" alt="heart icon" className="fav-icon" />
-            <span className="add__fav">Add to Favourite</span>
+    <>
+      <section className="selected__movie">
+        {film.map((data, index) => (
+          <div key={index}>
+            <div className="selected__movie__leftbox">
+              <img
+                src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${data.poster_path}`}
+                alt="poster"
+                className="selected__poster"
+              />
+              <div className="icons__box">
+                <div className="icons__box__heart">
+                  <img
+                    src="./img/heart.svg"
+                    alt="heart icon"
+                    className="fav-icon"
+                  />
+                  <span className="add__fav">Add to Favourite</span>
+                </div>
+                <div className="icons__box__eye">
+                  <img
+                    src="./img/eye.svg"
+                    alt="eye icon"
+                    className="fav-icon"
+                  />
+                  <span className="want__watch">Want to Watch</span>
+                </div>
+              </div>
+            </div>
+            <div className="selected__movie__rightbox">
+              <h1 className="selected__movie__title">${data.name}</h1>
+              <div className="selected__movie__ratings">
+                <span className="duration">161min</span>
+                <span className="rating">PG-13</span>
+                <div className="rating__imdb">
+                  <img src="./img/imdb.png" className="imdb" alt="imdb logo" />
+                  <span className="score__imdb">${data.vote_average}</span>
+                </div>
+                <div className="rating__tomato">
+                  <img
+                    src="./img/tomato.png"
+                    className="tomato"
+                    alt="tomoato logo"
+                  />
+                  <span className="score__tomato">80%</span>
+                </div>
+              </div>
+              <div className="movie__genre">
+                <span>Action</span>
+                <span>Adventure</span>
+                <span>Drama</span>
+              </div>
+              <p className="movie__description">{data.overview}</p>
+            </div>
           </div>
-          <div className="icons__box__eye">
-            <img src="./img/eye.svg" alt="eye icon" className="fav-icon" />
-            <span className="want__watch">Want to Watch</span>
-          </div>
-        </div>
-      </div>
-      <div className="selected__movie__rightbox">
-        <h1 className="selected__movie__title">
-          Black Panther: Wakanda Forever (2022)
-        </h1>
-        <div className="selected__movie__ratings">
-          <span className="duration">161min</span>
-          <span className="rating">PG-13</span>
-          <div className="rating__imdb">
-            <img src="./img/imdb.png" className="imdb" alt="imdb logo" />
-            <span className="score__imdb">7.6</span>
-          </div>
-          <div className="rating__tomato">
-            <img src="./img/tomato.png" className="tomato" alt="tomoato logo" />
-            <span className="score__tomato">80%</span>
-          </div>
-        </div>
-        <div className="movie__genre">
-          <span>Action</span>
-          <span>Adventure</span>
-          <span>Drama</span>
-        </div>
-        <p className="movie__description">
-          Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to
-          protect their nation from intervening world powers in the wake of King
-          T'Challa's death. As the Wakandans strive to embrace their next
-          chapter, the heroes must band together with Nakia and Everett Ross to
-          forge a new path for their beloved kingdom.
-        </p>
-      </div>
-    </section>
+        ))}
+      </section>
+    </>
   );
 }
 

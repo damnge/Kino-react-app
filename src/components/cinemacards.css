@@ -8,8 +8,6 @@
   font-weight: 600;
   font-size: 48px;
   line-height: 58px;
-  /* identical to box height */
-
   letter-spacing: 0.025em;
   text-transform: uppercase;
   margin-bottom: 50px;
@@ -17,6 +15,7 @@
 
 .poster__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
   margin-bottom: 40px;
 }
