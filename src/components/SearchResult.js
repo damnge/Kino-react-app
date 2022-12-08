@@ -89,6 +89,7 @@ export default function SearchResult() {
                     <p className="search__description">{movie.overview}</p>
                   </div>
                 </div>
+                <div className="divider"></div>
               </Link>
             ))}
         </div>

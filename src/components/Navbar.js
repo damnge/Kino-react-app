@@ -18,9 +18,9 @@ function Navbar() {
             <li>
               <Link to="/ranking">Ranking</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/favourite">Favourite</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

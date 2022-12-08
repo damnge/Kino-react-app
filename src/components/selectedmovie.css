@@ -29,9 +29,10 @@
 }
 
 .selected__movie__title {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: bold;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .selected__movie__ratings {
   display: flex;
@@ -70,7 +71,30 @@
 }
 
 .movie__description {
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 50px;
   line-height: 33.6px;
+  margin-bottom: 75px;
+}
+
+.selected__poster {
+  width: 450px;
+  height: 650px;
+  border-radius: 8.4px;
+  filter: drop-shadow(0px 8.4px 15.75px rgba(0, 0, 0, 0.4));
+}
+
+.movie__link {
+  margin-top: 50px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #ffc93f;
+  border-radius: 8px;
+}
+
+.movie__link:hover {
+  color: white;
+  transition: all 0.2s;
 }

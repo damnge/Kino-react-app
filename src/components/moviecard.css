@@ -30,3 +30,7 @@
   margin: auto;
   color: #333;
 }
+
+.movie__link {
+  text-decoration: none;
+}

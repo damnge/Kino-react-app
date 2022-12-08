@@ -81,6 +81,12 @@
   .search__results {
     padding: 35px;
   }
+  .divider {
+    margin: 30px auto;
+  }
+  .search__poster {
+    margin-bottom: 30px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -106,5 +112,11 @@
   .search__card {
     flex-direction: column;
     align-items: center;
+  }
+  .search__poster {
+    margin-bottom: 50px;
+  }
+  .divider {
+    margin: 50px auto;
   }
 }
