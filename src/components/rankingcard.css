@@ -1,16 +1,26 @@
+.ranking__card__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  color: white;
+}
+
+.ranking__title {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 150px 0 100px 0;
+}
 .ranking__card {
   max-width: 1160px;
   max-height: 230px;
-  margin: 150px auto;
   display: flex;
   align-items: center;
-  background-color: #666;
-  color: white;
   margin-bottom: 100px;
 }
 
 .ranking__card__id {
   font-size: 64px;
+  text-align: center;
+  width: 100px;
   padding: 25px;
 }
 .ranking__card__img {
@@ -25,7 +35,8 @@
 }
 
 .ranking__card__info__type {
-  margin-bottom: 60px;
+  margin-left: 30px;
+  width: 500px;
 }
 
 .ranking__card__score {
@@ -34,7 +45,12 @@
 }
 
 .score {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: bold;
   margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

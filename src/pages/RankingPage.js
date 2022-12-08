@@ -1,8 +1,8 @@
 import React from "react";
-import RankingCard from "../components/RankingCard";
+import Ranking from "../components/RankingCard";
 
 function RankingPage() {
-  return <RankingCard />;
+  return <Ranking />;
 }
 
 export default RankingPage;
