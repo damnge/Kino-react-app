@@ -1,5 +1,4 @@
 import React from "react";
-import MovieCard from "./MovieCard";
 import "./cinemacards.css";
 
 function FavouriteAndWatch(props) {

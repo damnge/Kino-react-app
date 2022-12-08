@@ -6,9 +6,12 @@ import { useEffect, useState } from "react";
 function SelectedMovie() {
   const [film, setFilm] = useState([]);
   const { id } = useParams();
+  useEffect(() => {
+    detailMovies();
+  }, []);
 
   const detailMovies = async () => {
-    const url = `https://api.themoviedb.org/3/movie/11?api_key=4d1dd7d940550563fbb5c0d4434d7ced&language=en-U`;
+    const url = `https://api.themoviedb.org/3/movie/${id}?api_key=4d1dd7d940550563fbb5c0d4434d7ced&language=en-U`;
     try {
       const res = await fetch(url);
       const data = await res.json();
@@ -18,9 +21,7 @@ function SelectedMovie() {
     }
   };
 
-  // useEffect(() => {
-  //   detailMovies(11);
-  // }, []);
+  
 
   return (
     <>
