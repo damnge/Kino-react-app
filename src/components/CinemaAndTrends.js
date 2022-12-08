@@ -8,7 +8,7 @@ const CinemaAndTrends = (props) => {
   const [popular, setPopular] = useState([]);
   useEffect(() => {
     fetchPopular();
-  }, []);
+  });
   const fetchPopular = async () => {
     const data = await fetch(url);
     const movies = await data.json();
