@@ -13,7 +13,11 @@ function Footer() {
     <Box>
       <Container>
         <Row>
-          <img src="./img/logo.svg" alt="kino app logo" className="logo"></img>
+          <img
+            src="./img/logo.svg"
+            alt="kino app logo"
+            className="kino__logo"
+          ></img>
           <Column>
             <Heading>MENU</Heading>
             <FooterLink href="#">Home</FooterLink>
