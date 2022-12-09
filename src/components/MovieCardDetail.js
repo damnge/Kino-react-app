@@ -1,5 +1,5 @@
 import React from "react";
-import "./selectedmovie.css";
+import "./style/selectedmovie.css";
 
 function MovieCardDetail({ movie }) {
   return (

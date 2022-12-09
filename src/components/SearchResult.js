@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-// import SearchCard from "./SearchCard";
-import "./searchresult.css";
-import "./responsive.css";
-import "./selectedmovie.css";
+import "./style/searchresult.css";
+import "./style/responsive.css";
+import "./style/selectedmovie.css";
 import { Link } from "react-router-dom";
 
 export default function SearchResult() {

@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCardDetail from "./MovieCardDetail";
-import "./selectedmovie.css";
+import "./style/selectedmovie.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -12,7 +12,6 @@ function SelectedMovie() {
     const fetchDetails = async () => {
       const data = await fetch(url);
       const details = await data.json();
-      console.log(details);
       setDetails(details);
     };
 

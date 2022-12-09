@@ -1,5 +1,5 @@
 import React from "react";
-import "./searchcard.css";
+import "./style/searchcard.css";
 
 function SearchCard(props) {
   return (

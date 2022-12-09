@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import "./rankingcard.css";
-import "./responsive.css";
+import "./style/rankingcard.css";
+import "./style/responsive.css";
 import { Link } from "react-router-dom";
 
 function RankingCard() {

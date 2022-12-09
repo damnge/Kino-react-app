@@ -1,5 +1,5 @@
 import React from "react";
-import "./cinemacards.css";
+import "./style/cinemacards.css";
 
 function FavouriteAndWatch(props) {
   return (
