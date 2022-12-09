@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 
 function SelectedMovie() {
   const { movieId } = useParams();
-  console.log(movieId);
   const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=4d1dd7d940550563fbb5c0d4434d7ced&language=en-U`;
   const [detail, setDetails] = useState([]);
   useEffect(() => {

@@ -131,6 +131,41 @@
   .search__poster {
     margin-bottom: 30px;
   }
+  .ranking__info__score {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ranking__card__container {
+    padding: 30px;
+  }
+
+  .ranking__card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100% !important;
+  }
+  .ranking__card__info,
+  .ranking__score {
+    margin-left: 0px !important;
+    padding: 15px !important;
+  }
+  .movie__title__ranking {
+    text-align: center;
+  }
+  .ranking__title {
+    font-size: 32px !important;
+    margin: 100px auto !important;
+    text-align: center;
+    line-height: 65px;
+  }
+  .score {
+    font-size: 45px !important;
+  }
+  .score__star {
+    width: 45px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -165,5 +200,11 @@
   }
   .divider {
     margin: 50px auto;
+  }
+  .ranking__card__container {
+    padding: 50px;
+  }
+  .ranking__card__info {
+    width: 200px !important;
   }
 }

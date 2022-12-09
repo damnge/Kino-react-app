@@ -2,7 +2,7 @@ import styled from "styled-components";
 /*  Box is a styled component that wraps the entire footer */
 export const Box = styled.div`
   padding: 80px 0px;
-  background: #2d2d2d;
+  background: #121212;
   position: absolute;
   width: 100%;
   margin-bottom: -130px;

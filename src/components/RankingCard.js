@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./rankingcard.css";
+import "./responsive.css";
 import { Link } from "react-router-dom";
 
 function RankingCard() {
@@ -28,17 +29,18 @@ function RankingCard() {
                 src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                 alt="poster"
               />
-              <div className="ranking__card__info">
-                <div className="ranking__card__info__type">
-                  <h1 className="movie__title"> {movie.title} </h1>
-                  {/* <div>
-                <span className="genre">{movie.genre}</span>
-              </div> */}
+              <div className="ranking__info__score">
+                <div className="ranking__card__info">
+                  <h1 className="movie__title__ranking"> {movie.title} </h1>
                 </div>
-              </div>
-              <div className="ranking__card__score">
-                <span className="score">{movie.vote_average} </span>
-                <img src="./img/star.svg" className="score__star" alt="star" />
+                <div className="ranking__card__score">
+                  <span className="score">{movie.vote_average} </span>
+                  <img
+                    src="./img/star.svg"
+                    className="score__star"
+                    alt="star"
+                  />
+                </div>
               </div>
             </div>
           </Link>

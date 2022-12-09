@@ -9,9 +9,11 @@
   text-transform: uppercase;
   margin: 150px 0 100px 0;
 }
+.movie__title__ranking {
+  font-size: 32px;
+}
 .ranking__card {
-  max-width: 1160px;
-  max-height: 230px;
+  height: 230px;
   display: flex;
   align-items: center;
   margin-bottom: 100px;
@@ -26,21 +28,20 @@
 .ranking__card__img {
   width: 169px;
   height: 230px;
+  border-radius: 8px;
+  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.4));
 }
-
-.ranking__card__info {
+.ranking__info__score {
   display: flex;
-  flex-direction: column;
-  padding: 30px;
+  align-items: center;
 }
-
-.ranking__card__info__type {
+.ranking__card__info {
+  padding: 30px;
   margin-left: 30px;
   width: 500px;
 }
 
 .ranking__card__score {
-  margin-left: auto;
   padding: 30px;
 }
 
